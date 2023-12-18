@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="tempstyle.css">
+
+    <title>Temperature Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Calculator</h1>
+        <div class="container-feild-group">
+            <div id="temperatureInput" class="container-feild">
+                <div class="input-group">
+                    <div class="input-label">
+        <label for="frontUnit">From:</label>
+          </div>
+    <select name="temperature-from" class="select-group" id="fromUnit">
+        <option value="Celsius">Celsius</option>
+        <option value="Kelvin">Kelvins</option>
+        <option value="Fahrenheit">Fahrenheit</option>
+        <option value="Rankine">Rankine</option>
+      </select>
+
+  <input id="inputTemperature" placeholder="Input" type="text" name="from-temperature" min="0" class="input-feild">
+        </div>
+
+        <div class="input-group">
+            <div class="input-label">
+                <label for="toUnit">To:</label>
+        </div>
+
+        <select name="to-from" class="select-group" id="toUnit">
+            <option value="Celsius">Celsius</option>
+            <option value="Kelvin">Kelvins</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Rankine">Rankine</option>
+        </select>
+
+        <input readonly id="outputTemperature" placeholder="output" type="number" name="to-temperature" min="0" class="input-feild readonly">
+     </div>
+
+     <div class="input-group">
+        <button id="btnReset" class="btn btn-reset">Reset</button>
+        <button id="btnCalculate" class="btn btn-calculate">Calculate</button>
+     </div>
+ </div>
+
+ <div id="temperatureOutput" class="container-feild">
+    <div class="OutputInfo" class="output-information output-box">
+        <h2>Basic Information</h2>
+        <ul>
+         <li>Enter The Temperature Value in the <b><i>From Input </i></b>field you want to convert.</li>
+         <li>Select Your Given Temperature's Unit from the <b>From Select Box</b>.</li>
+         <li>Select Your Desired Temperature's Unit from the <b>From Select Box</b>.</li>
+         <li>Converted Value will Show in the <b><i>To Input Box</i></b>.</li>
+
+        </ul>
+    </div>
+
+</div>
+</div>
+
+
+<!-- javascript -->
+<script src="formula.js"></script>
+<script src="tempscript.js"></script>
+<script src="converter.js"></script>
+</body>
+</html>
